@@ -4,6 +4,7 @@ import SwiftUI
 struct SymbolView: View {
 
     let configuration: SymbolConfiguration
+    @Environment(\.symbolVariants) private var symbolVariants
 
     var image: Image {
         switch configuration.source {
@@ -15,7 +16,23 @@ struct SymbolView: View {
     }
 
     var body: some View {
-        image
+        VStack(spacing: 20) {
+            image
+                .font(.system(size: 256))
+            Text("Inline Image \(image) looks like this")
+            Button(action: {}) {
+                Label(
+                    title: { Text("Tap Me") },
+                    icon: { image })
+            }
+        }
+        .contentTransition(.symbolEffect(.replace.magic(fallback: .downUp)))
     }
 
+}
+
+#Preview {
+    let configuration = SymbolConfiguration(name: "ant.circle")
+    SymbolView(configuration: configuration)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
 }
