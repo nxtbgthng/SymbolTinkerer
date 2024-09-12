@@ -11,7 +11,9 @@ import SwiftUI
 struct SymbolTinkererApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            NavigationStack {
+                MainView()
+            }
         }
     }
 }

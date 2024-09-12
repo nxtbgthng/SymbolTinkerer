@@ -18,7 +18,7 @@ struct SymbolView: View {
     var body: some View {
         VStack(spacing: 20) {
             image
-                .font(.system(size: 256))
+                .font(.system(size: 200))
             Text("Inline Image \(image) looks like this")
             Button(action: {}) {
                 Label(
