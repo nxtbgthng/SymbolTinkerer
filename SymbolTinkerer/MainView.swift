@@ -3,20 +3,18 @@ import SwiftUI
 struct MainView: View {
 
     @State private var presentsInspector = false
+    @State private var configuration = SymbolConfiguration()
 
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            SymbolView(configuration: configuration)
         }
         .padding()
         .toolbar {
             Toggle("Inspector", systemImage: "sidebar.trailing", isOn: $presentsInspector)
         }
-        compatibility.inspector(isPresented: $presentsInspector) {
-            Text("Inspector")
+        .compatibility.inspector(isPresented: $presentsInspector) {
+            SymbolInspector(configuration: $configuration)
         }
     }
 }
