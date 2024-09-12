@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
 
     @State private var presentsInspector = false
 
@@ -15,7 +15,7 @@ struct ContentView: View {
         .toolbar {
             Toggle("Inspector", systemImage: "sidebar.trailing", isOn: $presentsInspector)
         }
-        .inspector(isPresented: $presentsInspector) {
+        compatibility.inspector(isPresented: $presentsInspector) {
             Text("Inspector")
         }
     }
@@ -23,6 +23,6 @@ struct ContentView: View {
 
 #Preview {
     NavigationStack {
-        ContentView()
+        MainView()
     }
 }
