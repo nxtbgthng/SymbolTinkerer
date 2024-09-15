@@ -3,20 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		82F43FFA2C971DCC0098FADA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F43FEF2C971DCC0098FADA /* Preview Assets.xcassets */; };
+		82F43FFB2C971DCC0098FADA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82F43FF52C971DCC0098FADA /* Assets.xcassets */; };
+		82F43FFC2C971DCC0098FADA /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F43FEA2C971DCC0098FADA /* Compatibility.swift */; };
+		82F43FFD2C971DCC0098FADA /* Compatibility_Inspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F43FEB2C971DCC0098FADA /* Compatibility_Inspector.swift */; };
+		82F43FFE2C971DCC0098FADA /* DisplayOptionsInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F43FED2C971DCC0098FADA /* DisplayOptionsInspector.swift */; };
+		82F43FFF2C971DCC0098FADA /* SymbolConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F43FF12C971DCC0098FADA /* SymbolConfiguration.swift */; };
+		82F440002C971DCC0098FADA /* SymbolInspector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F43FF22C971DCC0098FADA /* SymbolInspector.swift */; };
+		82F440012C971DCC0098FADA /* SymbolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F43FF32C971DCC0098FADA /* SymbolView.swift */; };
+		82F440022C971DCC0098FADA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F43FF62C971DCC0098FADA /* MainView.swift */; };
+		82F440032C971DCC0098FADA /* SymbolTinkererApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F43FF82C971DCC0098FADA /* SymbolTinkererApp.swift */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		82ED65EF2C92F15D00409FDD /* SymbolTinkerer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SymbolTinkerer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82F43FEA2C971DCC0098FADA /* Compatibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compatibility.swift; sourceTree = "<group>"; };
+		82F43FEB2C971DCC0098FADA /* Compatibility_Inspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Compatibility_Inspector.swift; sourceTree = "<group>"; };
+		82F43FED2C971DCC0098FADA /* DisplayOptionsInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayOptionsInspector.swift; sourceTree = "<group>"; };
+		82F43FEF2C971DCC0098FADA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		82F43FF12C971DCC0098FADA /* SymbolConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolConfiguration.swift; sourceTree = "<group>"; };
+		82F43FF22C971DCC0098FADA /* SymbolInspector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolInspector.swift; sourceTree = "<group>"; };
+		82F43FF32C971DCC0098FADA /* SymbolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolView.swift; sourceTree = "<group>"; };
+		82F43FF52C971DCC0098FADA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82F43FF62C971DCC0098FADA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		82F43FF72C971DCC0098FADA /* SymbolTinkerer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SymbolTinkerer.entitlements; sourceTree = "<group>"; };
+		82F43FF82C971DCC0098FADA /* SymbolTinkererApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolTinkererApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		82ED65F12C92F15D00409FDD /* SymbolTinkerer */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SymbolTinkerer;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		82ED65EC2C92F15D00409FDD /* Frameworks */ = {
@@ -32,7 +48,7 @@
 		82ED65E62C92F15D00409FDD = {
 			isa = PBXGroup;
 			children = (
-				82ED65F12C92F15D00409FDD /* SymbolTinkerer */,
+				82F43FF92C971DCC0098FADA /* SymbolTinkerer */,
 				82ED65F02C92F15D00409FDD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +59,56 @@
 				82ED65EF2C92F15D00409FDD /* SymbolTinkerer.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		82F43FEC2C971DCC0098FADA /* Compatibility */ = {
+			isa = PBXGroup;
+			children = (
+				82F43FEA2C971DCC0098FADA /* Compatibility.swift */,
+				82F43FEB2C971DCC0098FADA /* Compatibility_Inspector.swift */,
+			);
+			path = Compatibility;
+			sourceTree = "<group>";
+		};
+		82F43FEE2C971DCC0098FADA /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				82F43FED2C971DCC0098FADA /* DisplayOptionsInspector.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		82F43FF02C971DCC0098FADA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				82F43FEF2C971DCC0098FADA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		82F43FF42C971DCC0098FADA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				82F43FF12C971DCC0098FADA /* SymbolConfiguration.swift */,
+				82F43FF22C971DCC0098FADA /* SymbolInspector.swift */,
+				82F43FF32C971DCC0098FADA /* SymbolView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		82F43FF92C971DCC0098FADA /* SymbolTinkerer */ = {
+			isa = PBXGroup;
+			children = (
+				82F43FEC2C971DCC0098FADA /* Compatibility */,
+				82F43FEE2C971DCC0098FADA /* Modifier */,
+				82F43FF02C971DCC0098FADA /* Preview Content */,
+				82F43FF42C971DCC0098FADA /* Views */,
+				82F43FF52C971DCC0098FADA /* Assets.xcassets */,
+				82F43FF62C971DCC0098FADA /* MainView.swift */,
+				82F43FF72C971DCC0098FADA /* SymbolTinkerer.entitlements */,
+				82F43FF82C971DCC0098FADA /* SymbolTinkererApp.swift */,
+			);
+			path = SymbolTinkerer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +125,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				82ED65F12C92F15D00409FDD /* SymbolTinkerer */,
 			);
 			name = SymbolTinkerer;
 			packageProductDependencies = (
@@ -86,6 +149,7 @@
 				};
 			};
 			buildConfigurationList = 82ED65EA2C92F15D00409FDD /* Build configuration list for PBXProject "SymbolTinkerer" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -94,7 +158,6 @@
 			);
 			mainGroup = 82ED65E62C92F15D00409FDD;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 82ED65F02C92F15D00409FDD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -109,6 +172,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F43FFA2C971DCC0098FADA /* Preview Assets.xcassets in Resources */,
+				82F43FFB2C971DCC0098FADA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +184,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82F43FFC2C971DCC0098FADA /* Compatibility.swift in Sources */,
+				82F43FFD2C971DCC0098FADA /* Compatibility_Inspector.swift in Sources */,
+				82F43FFE2C971DCC0098FADA /* DisplayOptionsInspector.swift in Sources */,
+				82F43FFF2C971DCC0098FADA /* SymbolConfiguration.swift in Sources */,
+				82F440002C971DCC0098FADA /* SymbolInspector.swift in Sources */,
+				82F440012C971DCC0098FADA /* SymbolView.swift in Sources */,
+				82F440022C971DCC0098FADA /* MainView.swift in Sources */,
+				82F440032C971DCC0098FADA /* SymbolTinkererApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -47,6 +47,7 @@ struct DisplayOptionsInspectorViewModifier: ViewModifier {
                 Toggle("Rectangle", systemImage: "rectangle", isOn: $rectangle)
             }
             .toggleStyle(.button)
+
             Picker("Weight", selection: $weight) {
                 Text("UltraLight").tag(Font.Weight.ultraLight).fontWeight(.ultraLight)
                 Text("Thin").tag(Font.Weight.thin).fontWeight(.thin)
