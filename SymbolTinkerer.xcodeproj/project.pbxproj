@@ -149,7 +149,7 @@
 				};
 			};
 			buildConfigurationList = 82ED65EA2C92F15D00409FDD /* Build configuration list for PBXProject "SymbolTinkerer" */;
-			compatibilityVersion = "Xcode 15.3";
+			compatibilityVersion = "Xcode 15.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
